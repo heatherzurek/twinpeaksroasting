@@ -9,7 +9,7 @@ function Coffee(props){
       <h3>{props.tasting}</h3>
       <p>{props.origins}</p>
       <p><em>{props.price}</em></p>
-      <hr/>
+      <p>***</p>
     </div>
   );
 }

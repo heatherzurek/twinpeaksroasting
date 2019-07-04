@@ -34,16 +34,12 @@ export default function Inventory(){
       <style jsx>{`
           div {
             font-family: sans-serif;
-            background-color: #8e9a7c;
-            border: 1px solid black;
-            border-radius: 5px;
             padding: 5px;
             margin: 0 auto;
             text-align: center;
             width: 500px;
           }
           `}</style>
-      <hr/>
       {masterInventory.map((coffee, index) =>
         <Coffee name={coffee.name}
           tasting={coffee.tasting}
