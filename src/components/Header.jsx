@@ -6,6 +6,7 @@ function Header(){
   <div>
     <style jsx>{`
         div {
+          font-family: sans-serif;
           border: 1px solid black;
           border-radius: 5px;
           padding: 5px;

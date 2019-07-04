@@ -28,6 +28,11 @@ function AddInventory(){
           id='tasting'
           placeholder='Tasting Notes'/>
 
+      <input
+          type='text'
+          id='origins'
+          placeholder='Origins'/>
+
         <input
           id='price'
           placeholder='Price'/>

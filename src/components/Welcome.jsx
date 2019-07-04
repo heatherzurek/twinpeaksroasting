@@ -7,6 +7,7 @@ function Welcome(){
   <div>
     <style jsx>{`
         div {
+          font-family: sans-serif;
           padding: 5px;
           margin: 0 auto;
           text-align: center;

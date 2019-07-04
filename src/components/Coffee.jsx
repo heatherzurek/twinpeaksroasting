@@ -7,6 +7,7 @@ function Coffee(props){
     <div>
       <h2>{props.name}</h2>
       <h3>{props.tasting}</h3>
+      <p>{props.origins}</p>
       <p><em>{props.price}</em></p>
       <hr/>
     </div>
@@ -16,6 +17,7 @@ function Coffee(props){
 Coffee.propTypes = {
   name: PropTypes.string.isRequired,
   tasting: PropTypes.string.isRequired,
+  origins: PropTypes.string.isRequired,
   price: PropTypes.string
 };
 

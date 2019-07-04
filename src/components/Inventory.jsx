@@ -5,21 +5,25 @@ var masterInventory = [
   {
     name: 'Cherry Pie',
     tasting: 'Dark Chocolate and Cherry.',
+    origins: 'Central and South American',
     price: '$15.99'
   },
   {
     name: 'Fire Walk',
     tasting: 'Hazelnut, Toasted Marshmallow, Hint of Navel Orange.',
+    origins: 'Central America, South America, and the Pacific Rim',
     price: '$15.99'
   },
   {
     name: 'Log Lady',
     tasting: 'Bakers Chocolate, Walnut, Sweet Tobacco, Cinnamon.',
+    origins: 'Ecuador',
     price: '$14.99'
   },
   {
     name: 'Owls',
     tasting: 'Oak, Red Wine, and Black Currant.',
+    origins: 'Central and South American',
     price: '$15.99'
   }
 ];
@@ -29,6 +33,7 @@ export default function Inventory(){
     <div>
       <style jsx>{`
           div {
+            font-family: sans-serif;
             background-color: #8e9a7c;
             border: 1px solid black;
             border-radius: 5px;
@@ -42,6 +47,7 @@ export default function Inventory(){
       {masterInventory.map((coffee, index) =>
         <Coffee name={coffee.name}
           tasting={coffee.tasting}
+          origins={coffee.origins}
           price={coffee.price}
           key={index} />
       )}
