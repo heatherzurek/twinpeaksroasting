@@ -19,6 +19,7 @@ function Header(){
       <h3><em>A damn fine cup of coffee</em></h3>
       <Link to="/">Home</Link> | <Link to="/addinventory">Add Inventory</Link>
 
+      <p>Welcome to Twin Peaks Coffee roasters, where you'll get a damn fine cup of coffee every visit. Please enjoy our rotating list of beans.</p>
     </div>
   );
 }

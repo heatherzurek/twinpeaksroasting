@@ -4,6 +4,7 @@ function AddInventory(){
 
   return (
     <div>
+      <h2>Add Inventory:</h2>
       <style jsx>{`
         div {
           border: 1px solid black;
