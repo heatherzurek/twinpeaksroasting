@@ -4,15 +4,22 @@ import Welcome from './Welcome';
 import { Switch, Route } from 'react-router-dom';
 import Inventory from './Inventory';
 import AddInventory from './AddInventory';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles(theme => ({
+  container: {
+    background-color: 'blue',
+  },
+}));
 
 function App() {
+  const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.container}>
 
       <Header />
-      // <Welcome />
+      <Welcome />
       <Switch>
 
         <Route exact path='/' component={Inventory} />
