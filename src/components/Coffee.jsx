@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 function Coffee(props){
   return(
     <div>
-      <h3>{props.name} - {props.tasting}</h3>
+      <h2>{props.name}</h2>
+      <h3>{props.tasting}</h3>
       <p><em>{props.price}</em></p>
       <hr/>
     </div>

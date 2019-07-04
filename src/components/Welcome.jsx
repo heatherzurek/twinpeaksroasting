@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-function Header(){
+function Welcome(){
   return (
   <div>
     <style jsx>{`
@@ -14,11 +13,9 @@ function Header(){
           width: 500px;
         }
         `}</style>
-      <h1>Twin Peaks Coffee Roasters</h1>
-      <h3><em>A damn fine cup of coffee</em></h3>
-      <Link to="/">Home</Link> | <Link to="/addinventory">Add Inventory</Link>
+      <p>Welcome to Twin Peaks coffee roasters, where you'll get a damn fine cup of coffee every time.</p>
     </div>
   );
 }
 
-export default Header;
+export default Welcome;
