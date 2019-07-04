@@ -25,6 +25,18 @@ var masterInventory = [
     tasting: 'Oak, Red Wine, and Black Currant.',
     origins: 'Central and South American',
     price: '$15.99'
+  },
+  {
+    name: 'Palmer',
+    tasting: 'Molasses, Marrionberry, and Vanilla.',
+    origins: 'Central and South American',
+    price: '$14.99'
+  },
+  {
+    name: 'Detective Cooper',
+    tasting: 'Chocolate and Dried Fruit.',
+    origins: 'Central and South American',
+    price: '$15.99'
   }
 ];
 

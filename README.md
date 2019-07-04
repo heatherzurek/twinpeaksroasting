@@ -24,3 +24,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Structure
 ![component structure](/src/assets/images/componentstructure.png)
+
+##Features To Add
