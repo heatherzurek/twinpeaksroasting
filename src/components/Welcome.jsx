@@ -1,19 +1,19 @@
 import React from 'react';
+// import tree from '../assets/images/treesbackground.jpeg';
+
 
 function Welcome(){
   return (
   <div>
     <style jsx>{`
         div {
-          border: 1px solid black;
-          border-radius: 5px;
           padding: 5px;
           margin: 0 auto;
           text-align: center;
           width: 500px;
         }
         `}</style>
-      <p>Welcome to Twin Peaks coffee roasters, where you'll get a damn fine cup of coffee every time.</p>
+      <p>Welcome to Twin Peaks Coffee roasters, where you'll get a damn fine cup of coffee every visit.</p>
     </div>
   );
 }

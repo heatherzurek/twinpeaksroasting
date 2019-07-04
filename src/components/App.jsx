@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Welcome />
+      // <Welcome />
       <Switch>
       <Route exact path='/' component={Inventory} />
         <Route path='/addinventory' component={AddInventory} />
