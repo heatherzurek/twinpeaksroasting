@@ -1,11 +1,10 @@
 import React from 'react';
-// import tree from '../assets/images/treesbackground.jpeg';
 
 
 function Welcome(){
   return (
-  <div>
-    <style jsx>{`
+    <div>
+      <style jsx>{`
         div {
           font-family: sans-serif;
           padding: 5px;
@@ -14,7 +13,7 @@ function Welcome(){
           width: 500px;
         }
         `}</style>
-      <p>Welcome to Twin Peaks Coffee roasters, where you'll get a damn fine cup of coffee every visit.</p>
+      <p>Welcome to Twin Peaks Coffee roasters, where you'll get a damn fine cup of coffee every visit. Please enjoy our rotating list of beans.</p>
     </div>
   );
 }

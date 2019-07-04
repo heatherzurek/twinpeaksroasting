@@ -7,14 +7,15 @@ import AddInventory from './AddInventory';
 
 
 function App() {
+
   return (
     <div>
-      
+
       <Header />
       // <Welcome />
       <Switch>
 
-      <Route exact path='/' component={Inventory} />
+        <Route exact path='/' component={Inventory} />
 
         <Route path='/addinventory' component={AddInventory} />
 
