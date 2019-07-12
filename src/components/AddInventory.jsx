@@ -1,43 +1,56 @@
 import React from 'react';
 
 function AddInventory(){
+  let _name = null;
+  let _tasting = null;
+  let _origins = null;
+  let _price = null;
+
+  function handleSubmission(event) {
+    event.preventDefault();
+    console.log(_name.value);
+    console.log(_tasting.value);
+    console.log(_origins.value);
+    console.log(_price.value);
+    _name.value = '';
+    _tasting.value = '';
+    _origins.value = '';
+    _price.value = '';
+  }
 
   return (
     <div>
       <h2>Add Inventory:</h2>
       <style jsx>{`
         div {
-          border: 1px solid black;
-          border-radius: 5px;
           padding: 5px;
-          margin: 0 auto;
-          text-align: center;
-          width: 500px;
         }
         button {
-          background-color: #5e7761;
-          border: 1px solid black;
         }
         `}</style>
-      <form>
+      <form onSubmit={handleSubmission}>
         <input
           type='text'
           id='name'
-          placeholder='Coffee Name'/>
+          placeholder='Coffee Name'
+          ref={(input) => {_name = input;}}/>
 
         <input
           type='text'
           id='tasting'
-          placeholder='Tasting Notes'/>
+          placeholder='Tasting Notes'
+          ref={(input) => {_tasting = input;}}/>
 
         <input
           type='text'
           id='origins'
-          placeholder='Origins'/>
+          placeholder='Origins'
+          ref={(input) => {_origins = input;}}/>
 
         <input
           id='price'
-          placeholder='Price'/>
+          placeholder='Price'
+          ref={(input) => {_price = input;}}/>
         <button type='submit'>Add</button>
 
       </form>

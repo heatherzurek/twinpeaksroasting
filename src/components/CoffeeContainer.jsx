@@ -9,20 +9,19 @@ class CoffeeContainer extends React.Component {
     this.state = {
       formVisible: false
     };
-    // this.handleClick = this.handleClick.bind(this);
+    this.handleAdminConfirm = this.handleAdminConfirm.bind(this);
   }
 
-// handleClick(){
-//   this.setState({formVisible: true});
-//   console.log('formVisible is currently set to:' + this.state.formVisible);
-// }
+handleAdminConfirm(){
+  this.setState({formVisible: true});
+}
 
   render() {
     let contentVisible = null;
     if (this.state.formVisible){
       contentVisible = <AddInventory />;
     } else {
-      contentVisible = <AdminLogin />;
+      contentVisible = <AdminLogin onAdminConfirm={this.handleAdminConfirm} />;
     }
     return(
       <div>
