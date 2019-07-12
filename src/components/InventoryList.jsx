@@ -1,7 +1,7 @@
 import React from 'react';
 import Coffee from './Coffee';
 
-var masterInventory = [
+var masterInventoryList = [
   {
     name: 'Cherry Pie',
     tasting: 'Dark Chocolate and Cherry.',
@@ -40,7 +40,7 @@ var masterInventory = [
   }
 ];
 
-export default function Inventory(){
+export default function InventoryList(){
   return (
     <div>
       <style jsx>{`
@@ -52,7 +52,7 @@ export default function Inventory(){
             width: 500px;
           }
           `}</style>
-      {masterInventory.map((coffee, index) =>
+      {masterInventoryList.map((coffee, index) =>
         <Coffee name={coffee.name}
           tasting={coffee.tasting}
           origins={coffee.origins}

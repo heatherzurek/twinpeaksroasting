@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
-import Inventory from './Inventory';
+import InventoryList from './InventoryList';
 import AddInventory from './AddInventory';
 
 
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Switch>
 
-        <Route exact path='/' component={Inventory} />
+        <Route exact path='/' component={InventoryList} />
 
         <Route path='/addinventory' component={AddInventory} />
 
