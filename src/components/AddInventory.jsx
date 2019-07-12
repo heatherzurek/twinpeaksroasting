@@ -26,6 +26,7 @@ export default function AddInventory(props){
           flex-direction: column;
           justify-content: space-between;
           text-align: center;
+          font-family: sans-serif;
         }
         button {
         }

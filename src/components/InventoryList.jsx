@@ -11,7 +11,7 @@ export default function InventoryList(props){
         text-align: center;
       }
       `}</style>
-      <hr/>
+      <div className="coffeeList">
       {props.inventoryList.map((coffee, index) =>
         <Coffee name={coffee.name}
           tasting={coffee.tasting}
@@ -19,6 +19,7 @@ export default function InventoryList(props){
           price={coffee.price}
           key={index} />
       )}
+      </div>
     </div>
   );
 }

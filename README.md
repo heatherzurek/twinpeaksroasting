@@ -25,4 +25,18 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Structure
 ![component structure](/src/assets/images/componentstructure.png)
 
-##Features To Add
+## Known Bugs
+
+_No Known Bugs🐛🐞_
+
+## Support and contact details
+
+_If you have any questions or concerns please contact me at `heather.zurek@gmail.com`_
+
+## Technologies Used
+
+_React, JavaScript, HTML, CSS_
+
+### License
+
+*GPL*

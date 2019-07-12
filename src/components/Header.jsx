@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const backgroundImage = {
   backgroundImage: `url(${coffee})`,
-  height: '550px',
+  height: '670px',
   backgroundPosition: 'center',
 };
 
@@ -20,7 +20,7 @@ export default function Header() {
         .headerText {
           color: #000000;
           width: 300px;
-          height: 530px;
+          height: 650px;
           background-color: #efefef96;
           padding: 10px;
         }
