@@ -22,6 +22,10 @@ export default function AddInventory(props){
       <style jsx>{`
         div {
           padding: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center;
         }
         button {
         }

@@ -28,7 +28,7 @@ export default function AdminLogin(props){
       <h3>Admin Login</h3>
       <form>
         <label>
-          <input type="text" name="name" placeholder="username" />
+          <input type="email" name="name" placeholder="username@email.com" />
         </label>
         <label>
           <input type="text" name="name" placeholder="password" />
