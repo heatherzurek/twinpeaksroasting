@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function AddInventory(){
+export default function AddInventory(props){
   let _name = null;
   let _tasting = null;
   let _origins = null;
@@ -8,10 +9,7 @@ function AddInventory(){
 
   function handleSubmission(event) {
     event.preventDefault();
-    console.log(_name.value);
-    console.log(_tasting.value);
-    console.log(_origins.value);
-    console.log(_price.value);
+    props.onNewInventoryCreation({name: _name.value, tasting: _tasting.value, origins: _origins.value, price: _price.value})
     _name.value = '';
     _tasting.value = '';
     _origins.value = '';
@@ -58,4 +56,6 @@ function AddInventory(){
   );
 }
 
-export default AddInventory;
+AddInventory.propTypes = {
+  onNewInventoryCreation: PropTypes.func
+};

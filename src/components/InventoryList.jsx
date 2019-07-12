@@ -1,11 +1,12 @@
 import React from 'react';
 import Coffee from './Coffee';
+import PropTypes from 'prop-types';
 
-export default function InventoryList(){
+export default function InventoryList(props){
   return (
     <div>
       <hr/>
-      {masterInventoryList.map((coffee, index) =>
+      {props.inventoryList.map((coffee, index) =>
         <Coffee name={coffee.name}
           tasting={coffee.tasting}
           origins={coffee.origins}
@@ -15,3 +16,7 @@ export default function InventoryList(){
     </div>
   );
 }
+
+InventoryList.propTypes = {
+  inventoryList: PropTypes.array
+};

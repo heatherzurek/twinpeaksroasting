@@ -1,6 +1,7 @@
 import React from 'react';
 import AdminLogin from './AdminLogin';
 import AddInventory from './AddInventory';
+import PropTypes from 'prop-types';
 
 class CoffeeContainer extends React.Component {
 
@@ -19,7 +20,7 @@ handleAdminConfirm(){
   render() {
     let contentVisible = null;
     if (this.state.formVisible){
-      contentVisible = <AddInventory />;
+      contentVisible = <AddInventory onNewInventoryCreation={this.props.onNewInventoryCreation}/>;
     } else {
       contentVisible = <AdminLogin onAdminConfirm={this.handleAdminConfirm} />;
     }
@@ -30,5 +31,9 @@ handleAdminConfirm(){
     );
   }
 }
+
+CoffeeContainer.propTypes = {
+  onNewInventoryCreation: PropTypes.func
+};
 
 export default CoffeeContainer;
