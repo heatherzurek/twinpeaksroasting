@@ -10,7 +10,15 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterInventoryList: []
+      masterInventoryList: [
+        {name: 'Cherry Pie', tasting: 'Dark Chocolate and Cherry', origins: 'Central and South American', price: '15.99'},
+        
+        {name: 'Fire Walk', tasting: 'Hazelnut, Toasted Marshmallow, Hint of Navel Orange.', origins: 'Central America, South America, and the Pacific Rim', price: '15.99'},
+
+        {name: 'Log Lady', tasting: 'Bakers Chocolate, Walnut, Sweet Tobacco, Cinnamon', origins: 'Ecuador', price: '14.99'},
+
+        {name: 'Laura Palmer', tasting: 'Molasses, Marrionberry, and Vanilla', origins: 'Central and South American', price: '15.99'}
+      ]
     };
     this.handleNewInventory = this.handleNewInventory.bind(this);
   }
@@ -27,7 +35,7 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path='/' render={()=><InventoryList inventoryList={this.state.masterInventoryList} />} />
-            <Route path='/addinventory' render={()=><CoffeeContainer onNewInventoryCreation={this.handleNewInventory} />} />
+          <Route path='/addinventory' render={()=><CoffeeContainer onNewInventoryCreation={this.handleNewInventory} />} />
         </Switch>
       </div>
     );
